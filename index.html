@@ -36,7 +36,7 @@
 
                         <div class="mb-4">
                             <label class="block text-sm font-medium mb-1">Enter Registration Number:</label>
-                            <input type="text" placeholder="e.g. AB12 CDE"
+                            <input type="text" placeholder="e.g. AB12 CDE"    
                                 class="w-full px-3 py-2 rounded bg-gray-700 text-white" />
                         </div>
 
@@ -223,11 +223,17 @@
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h2 class="text-xl font-bold mb-4">Custom Plates</h2>
 
+                        <!-- <div class="mb-4">
+                            <label class="block text-sm font-medium mb-1">Enter Custom Text:</label>
+                            <input type="text" placeholder="Enter Custom Text" id="registrationInput"
+                                class="w-full px-3 py-2 rounded bg-gray-700 text-white" />
+                        </div> -->
                         <div class="mb-4">
                             <label class="block text-sm font-medium mb-1">Enter Custom Text:</label>
-                            <input type="text" placeholder="Enter Custom Text"
-                                class="w-full px-3 py-2 rounded bg-gray-700 text-white" />
-                        </div>
+                            <input type="text" placeholder="Enter Custom Text" id="registrationInput"
+                              class="w-full px-3 py-2 rounded bg-gray-700 text-white" />
+                          </div>
+                          
                         <div class="mb-4 flex space-x-4">
                             <!-- Font Size Selector -->
                             <div class="flex-1">
@@ -277,65 +283,65 @@
                             </select>
                         </div>
                         <!-- Front Plate Style -->
-                        <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Front & Rear:</label>
-                            <select id="frontRearSelector" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
-                                <option>Front & Rear</option>
-                                <option>Front</option>
-                                <option>Rear</option>
-                            </select>
-                        </div>
+                            <div class="mb-4">
+                                <label class="block text-sm font-medium mb-1">Front & Rear:</label>
+                                <select id="frontRearSelector" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
+                                    <option>Front & Rear</option>
+                                    <option>Front</option>
+                                    <option>Rear</option>
+                                </select>
+                            </div>
 
 
-                        <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Front Plate Style:</label>
-                            <select id="frontPlateStyleSelector"
-                                class="w-full px-3 py-2 rounded bg-gray-700 text-white">
-                                <option value="default">Default</option>
-                                <option value="bg-white text-black border border-gray-300">Classic White</option>
-                                <option value="bg-yellow-400 text-black border border-gray-300">Classic Yellow</option>
-                                <option value="bg-black text-white border border-gray-300">Blackout</option>
-                                <option value="bg-gradient-to-r from-green-400 to-blue-500 text-white">Gradient
-                                    Green-Blue</option>
-                                <option value="bg-gradient-to-r from-yellow-400 to-red-500 text-black">Gradient
-                                    Yellow-Red</option>
-                                <option value="bg-blue-500 text-white border border-gray-300">Solid Blue</option>
-                                <option value="bg-green-500 text-white border border-gray-300">Solid Green</option>
-                                <option value="bg-red-500 text-white border border-gray-300">Solid Red</option>
-                                <option value="bg-gray-800 text-yellow-400 border border-gray-300">Midnight Style
-                                </option>
-                                <option value="bg-purple-500 text-white border border-gray-300">Purple Power</option>
-                                <option value="bg-pink-500 text-white border border-gray-300">Pink Punch</option>
-                                <option value="bg-indigo-500 text-white border border-gray-300">Royal Indigo</option>
-                                <option value="bg-orange-500 text-white border border-gray-300">Orange Blaze</option>
-                                <option value="bg-teal-500 text-white border border-gray-300">Teal Touch</option>
-                            </select>
-                        </div>
+                            <div class="mb-4">
+                                <label class="block text-sm font-medium mb-1">Front Plate Style:</label>
+                                <select id="frontPlateStyleSelector"
+                                    class="w-full px-3 py-2 rounded bg-gray-700 text-white">
+                                    <option value="default">Default</option>
+                                    <option value="bg-white text-black border border-gray-300">Classic White</option>
+                                    <option value="bg-yellow-400 text-black border border-gray-300">Classic Yellow</option>
+                                    <option value="bg-black text-white border border-gray-300">Blackout</option>
+                                    <option value="bg-gradient-to-r from-green-400 to-blue-500 text-white">Gradient
+                                        Green-Blue</option>
+                                    <option value="bg-gradient-to-r from-yellow-400 to-red-500 text-black">Gradient
+                                        Yellow-Red</option>
+                                    <option value="bg-blue-500 text-white border border-gray-300">Solid Blue</option>
+                                    <option value="bg-green-500 text-white border border-gray-300">Solid Green</option>
+                                    <option value="bg-red-500 text-white border border-gray-300">Solid Red</option>
+                                    <option value="bg-gray-800 text-yellow-400 border border-gray-300">Midnight Style
+                                    </option>
+                                    <option value="bg-purple-500 text-white border border-gray-300">Purple Power</option>
+                                    <option value="bg-pink-500 text-white border border-gray-300">Pink Punch</option>
+                                    <option value="bg-indigo-500 text-white border border-gray-300">Royal Indigo</option>
+                                    <option value="bg-orange-500 text-white border border-gray-300">Orange Blaze</option>
+                                    <option value="bg-teal-500 text-white border border-gray-300">Teal Touch</option>
+                                </select>
+                            </div>
 
-                        <!-- Back Plate Style -->
-                        <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Back Plate Style:</label>
-                            <select id="backPlateStyleSelector" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
-                                <option value="default">Default</option>
-                                <option value="bg-white text-black border border-gray-300">Classic White</option>
-                                <option value="bg-yellow-400 text-black border border-gray-300">Classic Yellow</option>
-                                <option value="bg-black text-white border border-gray-300">Blackout</option>
-                                <option value="bg-gradient-to-r from-green-400 to-blue-500 text-white">Gradient
-                                    Green-Blue</option>
-                                <option value="bg-gradient-to-r from-yellow-400 to-red-500 text-black">Gradient
-                                    Yellow-Red</option>
-                                <option value="bg-blue-500 text-white border border-gray-300">Solid Blue</option>
-                                <option value="bg-green-500 text-white border border-gray-300">Solid Green</option>
-                                <option value="bg-red-500 text-white border border-gray-300">Solid Red</option>
-                                <option value="bg-gray-800 text-yellow-400 border border-gray-300">Midnight Style
-                                </option>
-                                <option value="bg-purple-500 text-white border border-gray-300">Purple Power</option>
-                                <option value="bg-pink-500 text-white border border-gray-300">Pink Punch</option>
-                                <option value="bg-indigo-500 text-white border border-gray-300">Royal Indigo</option>
-                                <option value="bg-orange-500 text-white border border-gray-300">Orange Blaze</option>
-                                <option value="bg-teal-500 text-white border border-gray-300">Teal Touch</option>
-                            </select>
-                        </div>
+                            <!-- Back Plate Style -->
+                            <div class="mb-4">
+                                <label class="block text-sm font-medium mb-1">Back Plate Style:</label>
+                                <select id="backPlateStyleSelector" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
+                                    <option value="default">Default</option>
+                                    <option value="bg-white text-black border border-gray-300">Classic White</option>
+                                    <option value="bg-yellow-400 text-black border border-gray-300">Classic Yellow</option>
+                                    <option value="bg-black text-white border border-gray-300">Blackout</option>
+                                    <option value="bg-gradient-to-r from-green-400 to-blue-500 text-white">Gradient
+                                        Green-Blue</option>
+                                    <option value="bg-gradient-to-r from-yellow-400 to-red-500 text-black">Gradient
+                                        Yellow-Red</option>
+                                    <option value="bg-blue-500 text-white border border-gray-300">Solid Blue</option>
+                                    <option value="bg-green-500 text-white border border-gray-300">Solid Green</option>
+                                    <option value="bg-red-500 text-white border border-gray-300">Solid Red</option>
+                                    <option value="bg-gray-800 text-yellow-400 border border-gray-300">Midnight Style
+                                    </option>
+                                    <option value="bg-purple-500 text-white border border-gray-300">Purple Power</option>
+                                    <option value="bg-pink-500 text-white border border-gray-300">Pink Punch</option>
+                                    <option value="bg-indigo-500 text-white border border-gray-300">Royal Indigo</option>
+                                    <option value="bg-orange-500 text-white border border-gray-300">Orange Blaze</option>
+                                    <option value="bg-teal-500 text-white border border-gray-300">Teal Touch</option>
+                                </select>
+                            </div>
 
 
                         <div class="mb-4">
@@ -421,17 +427,17 @@
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h2 class="text-xl font-bold mb-4">Live Preview</h2>
 
-                        <div class="space-y-4">
-                            <img id="backBadge" src="" alt="" class="w-8 h-8 mr-2 hidden" />
-                            <div class="bg-white text-black font-bold text-2xl rounded-lg p-4 text-center"
-                                id="customPlateFront">CUSTOM TXT
-                            </div>
+                            <div class="space-y-4">
+                                <img id="backBadge" src="" alt="" class="w-8 h-8 mr-2 hidden" />
+                                <div class="bg-white text-black font-bold text-2xl rounded-lg p-4 text-center"
+                                    id="customPlateFront"><span>CUSTOM TXT</span>
+                                </div>
 
-                            <img id="frontBadge" src="" alt="" class="w-8 h-8 mr-2 hidden" />
-                            <div class="bg-yellow-400 text-black font-bold text-2xl rounded-lg p-4 text-center"
-                                id="customPlateBack">CUSTOM
-                                TXT</div>
-                        </div>
+                                <img id="frontBadge" src="" alt="" class="w-8 h-8 mr-2 hidden" />
+                                <div class="bg-yellow-400 text-black font-bold text-2xl rounded-lg p-4 text-center"
+                                    id="customPlateBack"><span>CUSTOM</span>
+                                    TXT</div>
+                            </div>
 
                         <div class="mt-6 flex justify-between items-center">
                             <span class="text-lg font-bold">Total Price: £29.99</span>

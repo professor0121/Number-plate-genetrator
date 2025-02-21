@@ -268,4 +268,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
 
-  //handling the custom plate badge
+  //handling the custom plate fron and rare the plate on the rendering the front and backend
+
+  const frontPlateStyleSelector = document.getElementById('frontPlateStyleSelector');
+  console.log(frontPlateStyleSelector.value);
+
+  document.getElementById("frontPlateStyleSelector").addEventListener("", function () {
+    let selectedStyle = this.value;
+    let selectedOption = this.options[this.selectedIndex].text;
+    console.log(selectedOption);
+    console.log(selectedStyle);
+    let frontPlate = document.getElementById("customPlateFront");
+    let backPlate = document.getElementById("customPlateBack");
+
+    // Reset only style-related classes, keeping structure
+    frontPlate.className = "font-bold text-2xl rounded-lg p-4 text-center";
+    backPlate.className = "font-bold text-2xl rounded-lg p-4 text-center";
+
+    // Apply new styles if not default
+    if (selectedStyle !== "default") {
+        frontPlate.classList.add(...selectedStyle.split(" "));
+        backPlate.classList.add(...selectedStyle.split(" "));
+    } else {
+        // Default styles
+        frontPlate.classList.add("bg-white", "text-black", "border", "border-gray-300");
+        backPlate.classList.add("bg-yellow-400", "text-black", "border", "border-gray-300");
+    }
+});
