@@ -19,7 +19,7 @@
                         Plates</button>
                 </li>
                 <li>
-                    <button id="customTab" class="tab-button px-4 py-2 text-gray-400 hover:text-white">Custom
+                    <button id="customTab" class="tab-button px-4 py-2 text-white-400 border-yellow-400">Custom
                         Plates</button>
                 </li>
             </ul>
@@ -32,17 +32,17 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Left Panel -->
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h2 class="text-xl font-bold mb-4">Legal Plates</h2>
+                        <h2 class="text-xl font-bold mb-4 text-white">Legal Plates</h2>
 
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Enter Registration Number:</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Enter Registration Number:</label>
                             <input type="text" placeholder="e.g. AB12 CDE"
                                 class="w-full px-3 py-2 rounded bg-gray-700 text-white" />
                         </div>
 
                         <!-- Front Plate Style -->
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Front & Rear:</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Front & Rear:</label>
                             <select id="frontRearSelector" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option>Front & Rear</option>
                                 <option>Front</option>
@@ -52,7 +52,7 @@
 
 
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Front Plate Style:</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Front Plate Style:</label>
                             <select id="frontPlateStyleSelector"
                                 class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option value="default">Default</option>
@@ -78,7 +78,7 @@
 
                         <!-- Back Plate Style -->
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Back Plate Style:</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Back Plate Style:</label>
                             <select id="backPlateStyleSelector" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option value="default">Default</option>
                                 <option value="bg-white text-black border border-gray-300">Classic White</option>
@@ -103,7 +103,7 @@
 
 
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Plate Size:</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Plate Size:</label>
                             <select id="plateSizeSelector" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option value="w-100 h-18">Default</option>
                                 <option value="w-80 h-28">Standard 520x111mm</option>
@@ -129,7 +129,7 @@
 
 
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Add a Border?</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Add a Border?</label>
                             <select id="borderSelector" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option value="none">No Border</option>
                                 <option value="border border-black">Thin Black Border</option>
@@ -146,7 +146,7 @@
 
 
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Add a Badge?</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Add a Badge?</label>
                             <select id="badgeSelector" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option value="none">No Badge</option>
                                 <option value="badge1.png">UK Flag</option>
@@ -157,7 +157,7 @@
 
 
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Electric Vehicle Strip?</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Electric Vehicle Strip?</label>
                             <select id="evStripSelector" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option value="none">No Strip</option>
                                 <option value="bg-green-500">Green Strip</option>
@@ -171,7 +171,7 @@
 
 
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Fixings?</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Fixings?</label>
                             <select class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option>No</option>
                             </select>
@@ -180,10 +180,10 @@
 
                     <!-- Right Panel -->
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h2 class="text-xl font-bold mb-4">Live Preview</h2>
+                        <h2 class="text-xl font-bold mb-4 text-white">Live Preview</h2>
 
                         <div class="space-y-4">
-                            <h1>Front View</h1>
+                            <h1 class="text-white">Front View</h1>
                             <div class="flex items-center justify-center bg-white text-black font-bold text-2xl rounded-lg p-4 text-center overflow-hidden"
                                 id="customLegalplateFront">
                                 <div id="frontEVStrip" class="w-2 bg-transparent transition-all duration-300"></div>
@@ -191,7 +191,7 @@
                                 <span>OG51 GNS</span>
                             </div>
 
-                            <h1>Back View</h1>
+                            <h1 class="text-white">Back View</h1>
                             <div class="flex items-center justify-center bg-yellow-400 text-black font-bold text-2xl rounded-lg p-4 text-center overflow-hidden"
                                 id="customLegalplateBack">
                                 <div id="frontEVStrip" class="w-2 bg-transparent transition-all duration-300"></div>
@@ -202,7 +202,7 @@
 
 
                         <div class="mt-6 flex justify-between items-center">
-                            <span class="text-lg font-bold">Total Price: £24.99</span>
+                            <span class="text-lg font-bold text-white">Total Price: £24.99</span>
                             <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Add to
                                 Cart</button>
                         </div>
@@ -221,7 +221,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Left Panel -->
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h2 class="text-xl font-bold mb-4">Custom Plates</h2>
+                        <h2 class="text-xl font-bold mb-4 text-white">Custom Plates</h2>
 
                         <!-- <div class="mb-4">
                             <label class="block text-sm font-medium mb-1">Enter Custom Text:</label>
@@ -229,7 +229,7 @@
                                 class="w-full px-3 py-2 rounded bg-gray-700 text-white" />
                         </div> -->
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Enter Custom Text:</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Enter Custom Text:</label>
                             <input type="text" placeholder="Enter Custom Text" id="registrationInput"
                                 class="w-full px-3 py-2 rounded bg-gray-700 text-white" />
                         </div>
@@ -237,7 +237,7 @@
                         <div class="mb-4 flex space-x-4">
                             <!-- Font Size Selector -->
                             <div class="flex-1">
-                                <label class="block text-sm font-medium mb-1">Font Size:</label>
+                                <label class="block text-sm font-medium mb-1 text-white">Font Size:</label>
                                 <select id="customFontSizeSelector"
                                     class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                     <option value="text-xl">Small</option>
@@ -250,7 +250,7 @@
 
                             <!-- Font Style Selector -->
                             <div class="flex-1">
-                                <label class="block text-sm font-medium mb-1">Font Style:</label>
+                                <label class="block text-sm font-medium mb-1 text-white">Font Style:</label>
                                 <select id="customFontStyleSelector"
                                     class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                     <option value="normal">Normal</option>
@@ -262,7 +262,7 @@
 
                             <!-- Font Color Picker -->
                             <div class="flex-1">
-                                <label class="block text-sm font-medium mb-1">Font Color:</label>
+                                <label class="block text-sm font-medium mb-1 text-white">Font Color:</label>
                                 <input id="customFontColorPicker" type="color"
                                     class="w-full h-10 rounded-lg cursor-pointer" value="#000000" />
                             </div>
@@ -270,7 +270,7 @@
 
 
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Plate Style:</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Plate Style:</label>
                             <select id="plateStyleSelector" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option value="default">Default Style</option>
                                 <option value="3d-style">3D Style</option>
@@ -344,7 +344,7 @@
  -->
 
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Plate Size:</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Plate Size:</label>
                             <select id="plateSizeSelectorcustom"
                                 class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option value="w-100 h-18">Default</option>
@@ -367,7 +367,7 @@
                         </div>
 
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Add a Border?</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Add a Border?</label>
                             <select id="borderSelectorcustom" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option value="none">No Border</option>
                                 <option value="border border-black">Thin Black Border</option>
@@ -382,7 +382,7 @@
                             </select>
                         </div>
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Add a Badge?</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Add a Badge?</label>
                             <select id="badgeSelectors" class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option value="none">No Badge</option>
                                 <option value="badge1.png">UK Flag</option>
@@ -394,7 +394,7 @@
 
 
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Color Scheme:</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Color Scheme:</label>
                             <select class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option>White on Black</option>
                                 <option>Black on Yellow</option>
@@ -402,7 +402,7 @@
                         </div>
 
                         <div class="mb-4">
-                            <label class="block text-sm font-medium mb-1">Add Graphic?</label>
+                            <label class="block text-sm font-medium mb-1 text-white">Add Graphic?</label>
                             <select class="w-full px-3 py-2 rounded bg-gray-700 text-white">
                                 <option>No</option>
                                 <option>Yes</option>
@@ -412,25 +412,28 @@
 
                     <!-- Right Panel -->
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h2 class="text-xl font-bold mb-4">Live Preview</h2>
+                        <h2 class="text-xl font-bold mb-4 text-white">Live Preview</h2>
+                        <div id="">
+                            <div class="space-y-4" >
+                                <div class="bg-white text-black font-bold text-2xl rounded-lg p-4 text-center flex items-center justify-center capture-section" data-id="1"
+                                    id="customPlateFront">
+                                    <img id="backBadgee" src="" alt="" class="!w-8 !h-8 mr-2 hidden" />
+                                    <span>CUSTOM TXT</span>
+                                </div>
 
-                        <div class="space-y-4">
-                            <div class="bg-white text-black font-bold text-2xl rounded-lg p-4 text-center flex items-center justify-center"
-                                id="customPlateFront">
-                                <img id="backBadgee" src="" alt="" class="w-8 h-8 mr-2 hidden" />
-                                <span>CUSTOM TXT</span>
-                            </div>
-
-                            <div class="bg-yellow-400 text-black font-bold text-2xl rounded-lg p-4 text-center flex items-center justify-center"
-                                id="customPlateBack">
-                                <img id="frontBadgee" src="" alt="" class="w-8 h-8 mr-2 hidden" />
-                                <span>CUSTOM TXT</span>   
+                                <div class="bg-yellow-400 text-black font-bold text-2xl rounded-lg p-4 text-center flex items-center justify-center capture-section" data-id="2"
+                                    id="customPlateBack">
+                                    <img id="frontBadgee" src="" alt="" class="!w-8 !h-8 mr-2 hidden" />
+                                    <span>CUSTOM TXT</span>
+                                </div>
                             </div>
                         </div>
 
+
                         <div class="mt-6 flex justify-between items-center">
-                            <span class="text-lg font-bold">Total Price: £29.99</span>
-                            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Add to
+                            <span class="text-lg font-bold text-white">Total Price: £29.99</span>
+                            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded"
+                                id="capture-btn">Add to
                                 Cart</button>
                         </div>
 

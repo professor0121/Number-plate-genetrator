@@ -278,4 +278,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Apply the default size on page load
     applyDefaultSize();
   });
-  
+  console.log("Hello World");
