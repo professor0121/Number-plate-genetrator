@@ -295,3 +295,27 @@ document.addEventListener('DOMContentLoaded', () => {
         backPlate.classList.add("bg-yellow-400", "text-black", "border", "border-gray-300");
     }
 });
+
+//Handling the custom badges....
+
+
+
+document.getElementById('badgeSelectors').addEventListener('change', function () {
+    const selectedBadge = this.value;
+    console.log(selectedBadge);
+    const backBadge = document.getElementById('backBadgee');
+    const frontBadge = document.getElementById('frontBadgee');
+    
+    if (selectedBadge === 'none') {
+        backBadge.classList.add('hidden');
+        frontBadge.classList.add('hidden');
+        backBadge.src = '';
+        frontBadge.src = '';
+    } else {
+        const badgePath = `images/${selectedBadge}`; // Path to the images folder
+        backBadge.classList.remove('hidden');
+        frontBadge.classList.remove('hidden');
+        backBadge.src = badgePath;
+        frontBadge.src = badgePath;
+    }
+});

@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to update badge images
     function updateBadge() {
       const selectedBadge = badgeSelector.value;
-  
+            console.log(selectedBadge); 
       if (selectedBadge !== 'none') {
         // Set the image source (assuming images are stored in an 'images' folder)
         frontBadge.src = `images/${selectedBadge}`;
