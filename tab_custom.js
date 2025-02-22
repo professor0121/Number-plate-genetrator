@@ -85,22 +85,22 @@ document.addEventListener('DOMContentLoaded', () => {
         applyTextShadow(plate); // Automatically apply text shadow
         break;
       case 'carbon-fiber':
-        plate.classList.add('bg-gray-800', 'border', 'border-gray-500');
+        plate.classList.add('bg-gray-800', 'border', 'border-gray-500','customCarbonFiberclasstohandle');
         break;
       case 'glossy-finish':
-        plate.classList.add('bg-gradient-to-r', 'from-gray-600', 'to-gray-900');
+        plate.classList.add('bg-gradient-to-r', 'from-gray-600', 'to-gray-900','customGlossyFinishclasstohandle');
         break;
       case 'matte-black':
-        plate.classList.add('bg-black', 'text-white');
+        plate.classList.add('bg-black', 'text-white','customMatteBlackclasstohandle');
         break;
       case 'chrome-style':
-        plate.classList.add('bg-gradient-to-r', 'from-gray-400', 'to-gray-100');
+        plate.classList.add('bg-gradient-to-r', 'from-gray-400', 'to-gray-100','customChromeStyleclasstohandle');
         break;
       case 'holographic':
-        plate.classList.add('bg-gradient-to-r', 'from-purple-500', 'to-pink-500');
+        plate.classList.add('bg-gradient-to-r', 'from-purple-500', 'to-pink-500','customHolographicclasstohandle');
         break;
       case 'gradient-neon':
-        plate.classList.add('bg-gradient-to-r', 'from-blue-500', 'to-green-500');
+        plate.classList.add('bg-gradient-to-r', 'from-blue-500', 'to-green-500','customGradientNeonclasstohandle');
         break;
       default:
         plate.classList.add('bg-white', 'text-black'); // Default style
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to apply a default text shadow for 3D style
   function applyTextShadow(plate) {
-    plate.classList.add('shadow-lg', 'text-shadow-3d');
+    plate.classList.add('shadow-xl', 'text-shadow-3d','custom3dclasstohandle');
   }
 
   // Function to reset plate styles (removing size, color, shadow)
@@ -127,7 +127,14 @@ document.addEventListener('DOMContentLoaded', () => {
       'from-purple-500',
       'to-pink-500',
       'shadow-lg',
-      'text-shadow-3d'
+      'text-shadow-3d',
+      'custom3dclasstohandle',
+      'customCarbonFiberclasstohandle',
+      'customGlossyFinishclasstohandle',
+      'customMatteBlackclasstohandle',
+      'customChromeStyleclasstohandle',
+      'customHolographicclasstohandle',
+      'customGradientNeonclasstohandle',
     );
   }
 

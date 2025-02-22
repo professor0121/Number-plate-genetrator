@@ -1,0 +1,175 @@
+.tab {
+    position: relative;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 10px rgba(30, 60, 114, 0.5);
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.tab:hover {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(30, 60, 114, 0.8);
+}
+
+/* Active Tab */
+.tab.active {
+    background: linear-gradient(135deg, #4a90e2, #2a5298);
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.7);
+    transform: scale(1.1);
+}
+
+/* Tab Underline Animation */
+.tab::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animate Underline on Hover */
+.tab:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+.custom3dclasstohandle {
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000000 !important;
+}
+
+.customCarbonFiberclasstohandle{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    background: repeating-linear-gradient(
+        45deg,
+        #222 0px,
+        #222 5px,
+        #333 5px,
+        #333 10px
+    ) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.customGlossyFinishclasstohandle{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    background: linear-gradient(to top, #222, #555, #fff 50%, #555, #222) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+.customMatteBlackclasstohandle{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #eee;
+    background: linear-gradient(145deg, #1a1a1a, #333, #1a1a1a);
+    border-radius: 10px;
+    border: 2px solid #444;
+    box-shadow: 
+        inset 2px 2px 5px rgba(255, 255, 255, 0.2),
+        inset -2px -2px 5px rgba(0, 0, 0, 0.5),
+        3px 3px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    letter-spacing: 2px;
+}
+.customChromeStyleclasstohandle{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(180deg, #f7f7f7, #dcdcdc, #a0a0a0, #dcdcdc, #f7f7f7);
+    border-radius: 12px;
+    border: 3px solid #e0e0e0;
+    box-shadow: 
+        inset 4px 4px 8px rgba(255, 255, 255, 0.6),
+        inset -4px -4px 8px rgba(0, 0, 0, 0.3),
+        5px 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+.customHolographicclasstohandle{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(135deg, #ff00ff, #00ffff, #ffcc00, #ff00ff, #00ffff);
+    background-size: 300% 300%;
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 
+        inset 4px 4px 8px rgba(255, 255, 255, 0.6),
+        inset -4px -4px 8px rgba(0, 0, 0, 0.3),
+        5px 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+.customGradientNeonclasstohandle{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(135deg, #ff00ff, #00ffff, #ffcc00, #ff00ff);
+    background-size: 300% 300%;
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        0 0 10px rgba(255, 0, 255, 0.8),
+        0 0 20px rgba(0, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 0, 0.8),
+        0 0 40px rgba(255, 0, 255, 0.6);
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 
+        0 0 5px rgba(255, 0, 255, 0.8), 
+        0 0 10px rgba(0, 255, 255, 0.8),
+        0 0 15px rgba(255, 255, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.adminImageContainerHeading{
+
+    margin-top: 500px !important;
+}
